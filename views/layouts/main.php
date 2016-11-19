@@ -5,6 +5,7 @@
 
 use yii\helpers\Html;
 use app\assets\AppAsset;
+use yii\widgets\Breadcrumbs;
 use yii\bootstrap\Nav;
 use yii\helpers\Url;
 
@@ -75,6 +76,10 @@ $page_id = Yii::$app->controller->id;
     </div>
 </div>
 <div class="container main-content">
+    <?= Breadcrumbs::widget([
+        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        'homeLink'=>false
+    ]) ?>
     <?= $content ?>
 </div>
     

@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Gardu */
 
 $this->title = 'Create Gardu';
-$this->params['breadcrumbs'][] = ['label' => 'Gardus', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Gardu', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="gardu-create">
